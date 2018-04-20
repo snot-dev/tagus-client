@@ -1,0 +1,24 @@
+#tagus-media-input-file {
+    display: none;
+}
+
+.tagus-media-input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tagus-media-input:hover {
+    color: white;
+}
+
+.tagus-media-input-label {
+    padding: 30px;
+    background: var(--main-red);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.tagus-media-input-icon {
+    margin-right: 15px;
+}

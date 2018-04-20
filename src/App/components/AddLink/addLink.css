@@ -1,0 +1,25 @@
+.tagus-unit-add-link {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: var(--title-color);
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+}
+
+.tagus-unit-add-link > .fa {
+    margin-right: 5px;
+}
+
+.tagus-unit-add-link:hover {
+    color: var(--main-red);
+    border-bottom: 2px solid var(--main-red);
+}
+
+.disabled .tagus-unit-add-link,
+.disabled .tagus-unit-add-link:hover {
+    color: var(--text-color);
+    cursor: not-allowed;
+    border-bottom: 2px solid transparent;
+}

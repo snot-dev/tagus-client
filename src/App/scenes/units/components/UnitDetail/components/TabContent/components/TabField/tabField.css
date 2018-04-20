@@ -1,0 +1,32 @@
+.tagus-unit-field {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.tagus-unit-field:hover {
+    background-color: #f1f1f1;
+}
+
+.tagus-unit-field-options {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 5px 15px;
+    font-size: 30px;
+}
+
+.tagus-unit-field:hover .tagus-unit-field-options {
+    display: block;
+    z-index: 1;
+}
+
+.tagus-unit-field-option {
+    margin-left: 15px;
+}
+
+.tagus-unit-field-option:hover {
+    display:inline-block;
+    cursor: pointer;
+    color: var(--main-red);
+}

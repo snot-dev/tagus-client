@@ -1,0 +1,48 @@
+.tagus-label {
+    display: inline-block;
+    color: var(--title-color);
+    margin-right: 15px;
+  }
+
+.tagus-info {
+    display: inline-block;
+}
+
+.tagus-input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tagus-input.react-form-select {
+    padding: 0;
+    width: 100%;
+    border: none;
+}
+
+.tagus-input.react-form-select > select {
+    width: 100%;
+    padding: 12px 6px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tagus-input.checkbox,
+.tagus-input.trueOrFalse {
+    width: auto;
+    display: inline-block;
+}
+
+.tagus-input:focus,
+.tagus-input > select:focus {
+    outline-color:none;
+    outline: none;
+}
+
+.tagus-form-control {
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+

@@ -1,0 +1,26 @@
+.tagus-unit-add-link {
+    display: inline-block;
+    padding: 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+}
+
+.tagus-unit-add-link > .fa {
+    margin-right: 5px;
+}
+
+.tagus-unit-add-link:hover {
+    color: var(--main-red);
+    border-bottom: 2px solid var(--main-red);
+}
+
+.tagus-unit-tabs .nav>li>a {
+    font-weight: 700;
+}
+
+.tab-content {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+}

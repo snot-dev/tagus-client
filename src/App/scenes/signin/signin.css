@@ -1,0 +1,58 @@
+#tagus-login {
+    min-height: 100%;
+    background-color: var(--bridge-red);
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.tagus-login-welcome-container {
+    color: #fff;
+    font-weight: bold;
+    font-size: 26px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.tagus-intro-form-container {
+    text-align: left;
+    padding: 30px;
+    position: relative;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 2px solid rgba(206,219,236,0.75);
+    box-shadow: 0px 2px 0px 0px rgba(107, 103, 103, 0.5);
+}
+
+
+.tagus-intro-form-container .tagus-login-field-container {
+    margin-bottom: 15px;
+}
+
+.login {
+    max-width: 350px;
+}
+
+.tagus-login-message {
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+    min-height: 22px;
+}
+
+.tagus-login-message.error {
+    color:var(--status-error);
+}
+
+.tagus-login-logo-container {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 105px;
+    margin-bottom: 15px;
+}
+
+#tagus-login-logo {
+    height: 100%;
+}

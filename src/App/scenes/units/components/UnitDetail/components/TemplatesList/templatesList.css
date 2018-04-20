@@ -1,0 +1,11 @@
+.tagus-checkbox-list-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+}
+
+.tagus-checkbox-list-item {
+    margin-right: 10px!important;
+    position: absolute;
+    left: 0;
+}

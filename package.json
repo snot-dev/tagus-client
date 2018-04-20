@@ -1,10 +1,41 @@
 {
   "name": "tagus-client",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "https://github.com/snot-dev/tagus-client.git",
   "main": "index.js",
+  "homepage": ".",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "moment": "^2.20.1",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.0.0",
+    "react-images": "^0.5.17",
+    "react-rte": "^0.16.0",
+    "react-scripts": "1.0.17",
+    "react-transition-group": "^2.2.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "axios": "^0.17.1",
+    "concurrency": "^0.1.4",
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react-form": "^2.12.1",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^5.0.0",
+    "redux-thunk": "^2.2.0"
   },
   "repository": {
     "type": "git",
@@ -20,6 +51,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/snot-dev/tagus-client/issues"
-  },
-  "homepage": "https://github.com/snot-dev/tagus-client#readme"
+  }
 }

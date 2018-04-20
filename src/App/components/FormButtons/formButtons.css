@@ -1,0 +1,9 @@
+.tagus-form-button-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn:focus {
+    outline-color:none;
+    outline: none;
+}

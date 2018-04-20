@@ -1,0 +1,108 @@
+.button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: all 200ms ease;
+}
+
+.button.full-width {
+  width: 100%;
+}
+
+.button.default {
+  background-color: var(--status-default);
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+.button.default:hover {
+  background-color: #6FC6FF;
+}
+
+.button.success {
+  background-color: var(--status-success);
+  box-shadow: 0px 5px 0px 0px #15B358;
+}
+
+.button.success:hover {
+  background-color: #48E68B;
+}
+
+.button.danger {
+  background-color: var(--status-error);
+  box-shadow: 0px 5px 0px 0px #CE3323;
+}
+
+.button.danger:hover {  
+  background-color: #FF6656;
+}
+
+.button.warning {
+  background-color: var(--status-warning);
+  box-shadow: 0px 5px 0px 0px #CD6509;
+}
+
+.button.warning:hover {
+  background-color: #FF983C;
+}
+  
+.button.info {
+  background-color: var(--status-info);
+  box-shadow: 0px 5px 0px 0px #D8AB00;
+}
+
+.button.info:hover {
+  background-color: #FFDE29;
+}
+
+
+.button:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 0px 0px 0px;
+  outline: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.button.disabled
+.button.disabled:hover,
+.button[disabled],
+.button[disabled]:hover, 
+html input[disabled] {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+    color: #fff!important;
+    background-color: #e9e9e9;
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+  }
+
+  @media (min-width: 768px) { 
+    .button {
+      border-radius: 5px;
+      border: 1px solid transparent;
+      font-weight: bold;
+      padding: 10px 25px;
+      text-decoration: none;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+      min-width: 120px;
+      width: auto;
+      margin-bottom: 0;
+      transition: all 200ms ease;
+    }
+}

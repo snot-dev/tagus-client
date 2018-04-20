@@ -1,0 +1,33 @@
+.tagus-unit-tabs .nav-tabs > li {
+    width: 100px;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.tagus-unit-tabs .nav-tabs > li a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tagus-unit-tab-container {
+    position: relative;
+}
+
+.tagus-unit-tab-options {
+    position: absolute;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+    left: 120px;
+}
+
+.tagus-unit-tab-option {
+    margin-right: 15px;
+}
+
+.tagus-unit-tab-option:hover {
+    color: var(--main-red);
+    cursor: pointer;
+}

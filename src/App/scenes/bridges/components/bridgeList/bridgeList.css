@@ -1,0 +1,19 @@
+.tagus-bridges-list-item {
+    position: relative;
+}
+
+.tagus-bridges-list-delete {
+    display: none;
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+}
+
+.tagus-bridges-list-item:hover .tagus-bridges-list-delete {
+    display: inline-block;
+}
+
+.tagus-bridges-list-delete:hover {
+    color: var(--main-red);
+    cursor: pointer;
+}

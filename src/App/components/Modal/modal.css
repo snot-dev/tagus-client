@@ -1,0 +1,33 @@
+.modal-header {
+    color: #fff;
+    background-color: var(--status-default);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.modal-header.warning {
+    background-color: var(--status-warning);
+}
+
+.modal-header.success {
+    background-color: var(--status-success);
+}
+
+.modal-header.error {
+    background-color: var(--status-error);
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal .button {
+    margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 450px;
+        margin: 30px auto;
+    }
+}

@@ -1,0 +1,37 @@
+.tagus-message {
+    width: 100%;
+    padding: 30px 5px;
+    color: #fff;
+    position: relative;
+    background-color: var(--status-default);
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom:2px;
+}
+
+.tagus-message.success {
+    background-color: var(--status-success);
+}
+
+.tagus-message.error {
+    background-color: var(--status-error);
+}
+
+.tagus-message.warning {
+    background-color: var(--status-warning);
+}
+
+.tagus-message-close-button {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tagus-message-text {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}

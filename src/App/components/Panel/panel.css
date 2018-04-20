@@ -1,0 +1,40 @@
+/*
+    COMPONENT VARIABLES
+*/
+:root {
+    --tagus-panel-bg: #fff;
+}
+
+.tagus-panel-container {
+    margin-bottom: 15px;
+    min-height: 300px;
+}
+
+.tagus-panel {
+    max-height: 100%;
+    height: 100%;
+    min-height: 300px;
+    background-color: var(--tagus-panel-bg);
+    border-radius: 5px;
+    border: 1px solid rgba(206,219,236,0.75);
+    box-shadow: 0px 2px 0px 0px rgba(206,219,236,0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.tagus-panel-content-container {
+    flex-grow: 1;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    overflow: auto;
+    position: relative;
+}
+
+
+@media (min-width: 768px) { 
+    .tagus-panel-container.full-height {
+        height: 100%;
+        min-height: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+#tagus-side-menu-container { 
+    height: 100%;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    z-index: 1100;
+
+}
+
+#tagus-side-menu {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 248px;
+    background-color: var(--navigation-bg-color);
+    border-right: 4px solid var(--bridge-red);
+    box-shadow: 2px 0px 0px 0px rgba(0,0,0,0.6);
+    -webkit-transition: all 0.5s ease; 
+    transition: all 0.5s ease; 
+}
+
+.nav-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#tagus-side-menu.collapsed {
+    left: -250px;
+}
+
+.tagus-side-menu-button-container {
+    padding: 0 10px;
+}
+
+#tagus-side-menu-button {
+    height: 30px;
+    width: 30px;
+    background-color: var(--main-red);
+    color: #ffffff;
+    border: 1px solid transparent;
+    z-index: 2000;
+}
+
+#tagus-side-menu-button.collapsed {
+    background-color: transparent;
+}
+
+#tagus-side-menu-button:hover {
+    background-color: var(--main-red);
+}
+
+@media (min-width: 768px) { 
+    #tagus-side-menu-container { 
+        z-index: 750;
+    }
+}

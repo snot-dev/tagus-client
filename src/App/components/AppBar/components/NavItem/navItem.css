@@ -1,0 +1,24 @@
+/*
+    COMPONENT VARIABLES
+*/
+:root {
+
+}
+
+.tagus-menu-link {
+    color: var(--nav-text-color);
+    transition: all 0.10s ease;
+} 
+
+.tagus-menu-link.active,
+.tagus-menu-link.active:hover,
+.tagus-menu-link:visited {
+    background-color: var(--active-nav-item);
+    color: var(--nav-text-color);
+    border-left: 5px solid var(--main-red);
+}
+
+.tagus-menu-link:hover {
+    color: var(--nav-text-color);
+    background-color: var(--hover-nav-item);
+} 

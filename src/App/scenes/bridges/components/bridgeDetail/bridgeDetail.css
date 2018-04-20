@@ -1,0 +1,10 @@
+#tagus-bridges-tabs .nav>li>a {
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.tab-content {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+}

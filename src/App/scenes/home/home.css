@@ -1,0 +1,34 @@
+.tagus-home-title,
+.tagus-home-thanking-note-highlight {
+    color: var(--main-red);
+}
+
+.tagus-home-subtitle-container {
+    margin-bottom: 30px;
+}
+
+.tagus-home-intruction-item {
+    color: var(--main-red);
+    font-weight: bold;
+}
+
+@media (min-width: 768px) { 
+    .tagus-home-title-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .tagus-home-instructions {
+        margin-bottom: 30px;
+    }
+
+    .tagus-home-intruction {
+        padding-left: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .tagus-home-thanking-note {
+        font-size: 18px;
+    }
+}

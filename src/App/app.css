@@ -1,0 +1,182 @@
+/* 
+  PROJECT VARIABLES
+*/
+:root {
+  /* Screen Widths */
+  --screen-xs: 768px;
+  --screen-md: 992px;
+  --screen-lg: 1200px;
+
+  /* Main Colors */
+  --main-red: #EC6052;
+  --bridge-red: #892532;
+
+  --navigation-bg-color: #273135;
+  --app-container-bg-color: #f0f4f7;
+  --nav-header-text-color: #5a859b;
+
+  --menu-bg-color: #fefefe;
+
+  --active-nav-item: #171d20;
+  --hover-nav-item: #1f272a;
+  --nav-text-color: #89949B;
+
+  /* Text Colors */
+  --text-color: #5f666b;
+  --title-color: #3B4648;
+
+  /* Status Colors */
+  --status-default: #55acee;
+  --status-success: #2ecc71;
+  --status-error: #e74c3c;
+  --status-warning: #e67e22;
+  --status-info: #f1c40f;
+}
+
+html, body, #root {
+  min-height: 100%!important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: auto;
+}
+
+a,
+a:hover, 
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+h3, p {
+  margin : 0;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+}
+
+#tagus-app {
+  min-height: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 0;
+  position: relative;
+  background-color: var(--app-container-bg-color);
+}
+
+/* General Class */
+
+.tagus-menu-list {
+  padding: 0;
+  display: block;
+  list-style-type: none;
+  float: left;
+}
+
+.tagus-menu-item {
+  float: left;
+  width: 100%;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.tagus-menu-item .fa {
+  margin-right: 15px;
+}
+
+.tagus-menu-link {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px 25px 15px 20px;
+}
+
+.tagus-menu-link.active,
+.tagus-menu-link:visited {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px 25px 15px 15px;
+}
+
+.tagus-menu-link:hover {
+  text-decoration: none;
+}
+
+.tagus-label {
+  display: inline-block;
+  color: var(--title-color);
+  margin-right: 15px;
+}
+
+.tagus-info {
+  display: inline-block;
+}
+
+.tagus-input {
+  width: 100%;
+  padding: 6px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.25s ease;
+}
+
+.tagus-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.tagus-input.checkbox,
+.tagus-input.trueOrFalse {
+  width: auto;
+  display: inline-block;
+}
+
+.tagus-input:focus,
+.tagus-input > select:focus {
+  outline-color:none;
+  outline: none;
+  border: 2px solid var(--status-default);
+}
+
+
+/* Libs Overrides */
+
+/* Buttons */
+.btn {
+  border-radius: 0;
+  min-width: 125px;
+  font-weight: bold;
+  box-shadow: none;
+}
+
+.btn-default {
+  background: #fff;
+  background-image: none;
+}
+
+.btn-primary {
+  background: #4A90E2;
+  border-color: #4A90E2;
+}
+
+/* Form */
+.react-form-input-error {
+  border: 2px solid var(--bridge-red);
+}
+
+.react-form-message-error {
+  color: var(--bridge-red);
+}

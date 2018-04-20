@@ -1,0 +1,22 @@
+.tagus-list-item {
+    width: 100%;
+    float: left;
+}
+
+.tagus-list-item-link  {
+    padding: 5px 0;
+    display: inline-block;
+    min-width: 200px;
+}
+
+.tagus-list-item .fa {
+    margin-right: 5px;
+}
+
+.tagus-list-item .active .fa  {
+    color: var(--main-red);
+}
+
+.tagus-list-item .active  {
+    border-bottom: 2px solid var(--main-red);
+}

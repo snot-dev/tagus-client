@@ -1,0 +1,19 @@
+.tagus-user-list-item {
+    position: relative;
+}
+
+.tagus-user-list-delete {
+    display: none;
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+}
+
+.tagus-user-list-item:hover .tagus-user-list-delete {
+    display: inline-block;
+}
+
+.tagus-user-list-delete:hover {
+    color: var(--main-red);
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.tagus-units-list-delete  {
+    display: none;
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+}
+
+.tagus-unit-list-item:hover .tagus-units-list-delete  {
+    display: inline-block;
+}
+
+.tagus-units-list-delete:hover {
+    color: var(--main-red);
+    cursor: pointer;
+}

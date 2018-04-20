@@ -1,0 +1,47 @@
+.tagus-drowpdown-options-list {
+    max-height: 130px;
+    overflow: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.tagus-drowpdown-options-list:hover, 
+.tagus-drowpdown-options-list:hover label {
+    color: #e0e0e0;
+}
+
+.tagus-drowpdown-options-list:hover .tagus-dropdown-options-list-overlay {
+    display: block;
+    z-index: 100;
+}
+
+.tagus-dropdown-options-list-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
+.tagus-dropdown-options-list-overlay-button {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.tagus-dropdown-options-list-overlay-button-icon {
+    position: absolute;
+    display: inline-block;
+    font-size: 24px;
+    color: var(--main-red);
+    top: 50%;
+    transform: translateY(-50%);    
+}

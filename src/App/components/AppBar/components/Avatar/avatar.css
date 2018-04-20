@@ -1,0 +1,33 @@
+/*
+    COMPONENT VARIABLES
+*/
+:root {
+    --avatar-text-color: #fff;
+}
+
+#tagus-avatar {
+    color: var(--avatar-text-color);
+    background-color: var(--main-red);
+}
+
+#tagus-avatar p {
+    margin: 0;
+}
+
+#tagus-username {
+    font-size: 14px;
+    margin: 0;
+    background-color: var(--bridge-red);
+}
+
+@media (min-width: 768px) {
+    #tagus-icon {
+        padding: 5px;
+        font-size: 60px;
+    }
+    
+    #tagus-username {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+}

@@ -1,0 +1,30 @@
+/*
+    Component variables
+*/
+:root {
+   
+}
+
+#tagus-container {
+  width: 100%;
+  padding-left: 0;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  #tagus-container {
+      height: 100%;
+      padding-left: 250px;
+      padding-top: 70px;
+      padding-bottom: 15px;
+      padding-right: 0;
+    }
+
+    #tagus-container .full-height {
+      height: 100%;
+      min-height: 100%;
+    }
+    
+  }

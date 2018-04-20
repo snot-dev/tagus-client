@@ -1,0 +1,17 @@
+.tagus-gallery-popover {
+    font-family: sans-serif;
+}
+
+.tagus-gallery-popover .copy {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.tagus-gallery-popover .copy:hover {
+    color: var(--main-red);
+    cursor: pointer;
+}
+
+.tagus-gallery-popover.popover {
+    max-width: 500px;
+}

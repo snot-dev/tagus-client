@@ -1,0 +1,118 @@
+#tagus-top-bar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    background-color: var(--bridge-red);
+    min-height: 25px;
+    color: white;
+    z-index: 1000;
+    height: 30px;
+    max-height: 30px;
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.6);
+}
+
+#tagus-nav-header-container {
+    height: 100%;
+    margin: 0 auto;
+}
+
+#tagus-nav-logo {
+    height: 100%;
+    padding: 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.10s ease;
+}
+
+#tagus-logo {
+    height: 100%;
+}
+
+#tagus-nav-logo:hover {
+    background-color: var(--main-red);
+}
+
+#tagus-nav-header {
+    margin: 0;
+    font-size: 34px;
+}
+
+.tagus-top-bar-container {
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.tagus-top-buttons-container {
+    padding: 0 5px;
+    height: 100%;
+    float: right;
+}
+
+.tagus-top-button {
+    font-size: 20px;
+    padding: 1px 10px;
+    display: inline-block;
+    transition: all 0.10s ease;
+}
+
+.tagus-top-buttons-container .tagus-top-button:hover {
+    background-color: var(--main-red);
+    cursor: pointer;
+}
+
+.tagus-top-user-username {
+    display: none;
+}
+
+.tagus-top-avatar.active {
+    background-color: var(--main-red);
+}
+
+@media (min-width: 768px) {
+    #tagus-top-bar {
+        max-height: 50px;
+        height: 50px;
+        box-shadow: none;
+    }
+
+    #tagus-nav-header-container {
+        padding: 0 30px;
+        float:left;
+        min-width: 250px;
+        width: 250px;
+        margin: 0;
+    }
+
+    #tagus-nav-logo {
+        padding: 5px 15px;
+    }
+
+    .tagus-logo {
+        height: auto;
+    }
+
+    .tagus-top-bar-container {
+        box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.6);
+        flex-grow: 1;
+        float: left;
+        height: 100%;
+        position: relative;
+    }
+
+    .tagus-top-user-username {
+        margin-left: 5px;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .tagus-top-buttons-container {
+        padding: 0 15px;
+    }
+
+    .tagus-top-button {
+        font-size: 22px;
+        padding: 10px 15px;
+    }
+}
