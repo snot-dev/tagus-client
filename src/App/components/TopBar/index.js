@@ -9,7 +9,7 @@ class TopBar extends Component {
             <nav id="tagus-top-bar">
                 <div id="tagus-nav-header-container">
                     <Link to="/home" id="tagus-nav-logo">
-                        <img id="tagus-logo" src="logo/Tagus_Logo_White_Horizontal.svg" title="tagus" alt="tagus" />
+                        <img id="tagus-logo" src="logo/Tagus_Logo_White_Horizontal.gif" title="tagus" alt="tagus" />
                     </Link>
                 </div>
                 <div className="tagus-top-bar-container">

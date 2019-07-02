@@ -31,7 +31,7 @@ class SigninPage extends Component {
                         <div className="row text-center">
                             <div className="col-xs-12">
                                 <div className="tagus-login-logo-container">
-                                    <img id="tagus-login-logo"  src="logo/Tagus_Logo_White_Horizontal.svg" alt="tagus" title="tagus" />    
+                                    <img id="tagus-login-logo"  src="logo/Tagus_Logo_White_Horizontal.gif" alt="tagus" title="tagus" />
                                 </div>
                             </div>
                         </div>
@@ -47,12 +47,12 @@ class SigninPage extends Component {
 
 SigninPage.propTypes = {
     auth: PropTypes.object.isRequired
-};  
+};
 
 const mapStateToProps = state => {
     return {
       auth: state.auth
     };
   };
-  
+
   export default connect(mapStateToProps)(SigninPage);
