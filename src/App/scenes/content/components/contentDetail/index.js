@@ -19,20 +19,20 @@ class ContentDetail extends Component {
             disabled: true
         };
     }
-    
+
     componentDidMount() {
         if(this.props.match.params.id) {
             store.dispatch(getContentDetailIfNeeded(this.props.match.params.id));
         }
     }
-    
+
     shouldComponentUpdate(props) {
         const hasNeededContent = props.detail && props.unit && this.props.match.params.id === props.detail._id && props.unit._id;
         const processingSave = props.savingContent !== this.props.savingContent;
-        
+
         return hasNeededContent || processingSave;
     }
-    
+
     componentWillUpdate(newProps) {
         if(newProps.match.params.id !== this.props.match.params.id) {
             store.dispatch(getContentDetailIfNeeded(newProps.match.params.id));
@@ -41,9 +41,9 @@ class ContentDetail extends Component {
             });
         }
     }
-    
+
     onSubmitContent(formValues) {
-        const updatedContent = _.cloneDeep(this.props.detail); 
+        const updatedContent = _.cloneDeep(this.props.detail);
         updatedContent.content = Object.assign(updatedContent.content, formValues);
 
         this.setState({
@@ -52,7 +52,7 @@ class ContentDetail extends Component {
 
         store.dispatch(saveContent(updatedContent));
     }
-    
+
     onSubmitProperties(formValues) {
         const newContent = Object.assign(this.props.detail, formValues.properties);
         store.dispatch(saveContent(newContent));
@@ -98,9 +98,8 @@ class ContentDetail extends Component {
             </Tabs>
         )
     }
-    
+
     render() {
-        console.warn(this.props);
         return (
             <Panel title={this.props.detail.name} className="col-xs-12 col-sm-8 full-height">
                 <Preview id={this.props.detail._id} />
@@ -110,7 +109,7 @@ class ContentDetail extends Component {
                     : null
                 }
                 <Overlay show={this.props.savingContent}/>
-            </Panel>  
+            </Panel>
         );
     };
 }

@@ -40,18 +40,17 @@ class Gallery extends Component {
     gotoNextLightboxImage() {
        this.setState({
             currentImage: this.state.currentImage +1 % this.props.images.length
-       }); 
+       });
     }
 
     gotoPrevLightboxImage() {
         this.setState({
              currentImage: this.state.currentImage -1 % this.props.images.length
-        }); 
+        });
      }
 
      _toggleModal(img) {
          return () => {
-             console.warn(img)
              this.setState({
                  deleteMode: img
              });
@@ -60,7 +59,7 @@ class Gallery extends Component {
 
      _deleteMedia() {
          store.dispatch(deleteMedia(this.state.deleteMode));
-         
+
         this.setState({
             deleteMode: null
         });
